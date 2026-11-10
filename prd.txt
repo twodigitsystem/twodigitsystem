@@ -1,0 +1,1210 @@
+# Product Requirements Document (PRD)
+# Two Digit System — Official Website
+
+**Document Version:** 1.0  
+**Product Name:** Two Digit System  
+**Product Type:** Independent Software Studio Website  
+**Platform:** Web  
+**Primary Audience:** Individuals, businesses, and software users  
+**Technology Stack:** Next.js, TypeScript, Tailwind CSS, shadcn/ui  
+**Document Status:** Initial Product Specification
+
+---
+
+## 1. Product Overview
+
+### 1.1 Introduction
+
+Two Digit System is an independent software studio focused on developing useful digital products, including Android applications and web applications.
+
+The website will serve as the official digital presence of Two Digit System.
+
+It will showcase products developed by the studio, provide information about available development services, establish brand credibility, and offer visitors a way to contact the developer.
+
+The website should communicate professionalism, technical capability, simplicity, and reliability.
+
+### 1.2 Product Vision
+
+Build a professional digital platform where users can discover, explore, and use software products developed by Two Digit System.
+
+The website should become the central destination for all current and future applications and software products.
+
+### 1.3 Brand Positioning
+
+**Brand Name:** Two Digit System
+
+**Brand Category:** Independent Software Studio
+
+**Primary Tagline:** Ideas into digital products.
+
+**Brand Description:**
+
+Two Digit System develops practical Android applications and modern web solutions designed to solve real-world problems through thoughtful design, modern technology, and user-focused development.
+
+### 1.4 Core Business Objectives
+
+1. Establish a professional software development brand.
+2. Showcase all Android and web applications in one place.
+3. Increase product visibility and discoverability.
+4. Generate enquiries for custom software development.
+5. Provide dedicated product information, support, and legal pages.
+6. Build trust with potential users and customers.
+7. Create a scalable platform for future products.
+
+---
+
+## 2. Goals and Non-Goals
+
+### 2.1 Primary Goals
+
+- Create a professional and modern company website.
+- Display Android and web products.
+- Provide individual landing pages for every product.
+- Present available development services.
+- Generate enquiries through a contact form.
+- Support SEO and search engine indexing.
+- Provide responsive experiences on desktop, tablet, and mobile.
+- Keep content management simple for a solo developer.
+
+### 2.2 Non-Goals
+
+The initial version will NOT include:
+
+- Customer login or registration.
+- Subscription management.
+- Online payments.
+- Customer dashboard.
+- Admin dashboard.
+- Complex CMS.
+- Project management functionality.
+- E-commerce functionality.
+- User-generated reviews.
+- Community features.
+
+These features may be considered in future versions if business requirements justify them.
+
+---
+
+## 3. Target Audience
+
+### 3.1 Software Users
+
+People searching for useful Android applications and web applications.
+
+Their needs:
+- Discover available applications.
+- Understand product features.
+- View screenshots.
+- Download Android applications.
+- Access web applications.
+- Find product support.
+
+### 3.2 Business Owners
+
+Small businesses, startups, and entrepreneurs interested in custom software.
+
+Their needs:
+- Understand development capabilities.
+- Explore previous products.
+- Evaluate technical expertise.
+- Request development services.
+- Contact the developer.
+
+### 3.3 Potential Collaborators
+
+Developers, designers, and business partners interested in collaboration.
+
+Their needs:
+- Understand the studio.
+- Explore its products and technologies.
+- Find contact information.
+
+---
+
+## 4. Website Information Architecture
+
+### 4.1 Main Navigation
+
+The main navigation will contain:
+
+- Home
+- Apps
+- Services
+- About
+- Contact
+
+Additional navigation elements:
+
+- Theme toggle.
+- Mobile navigation menu.
+- Primary contact CTA.
+
+### 4.2 Sitemap
+
+```text
+/
+│
+├── /apps
+│   ├── /apps/android
+│   ├── /apps/web
+│   └── /apps/[slug]
+│
+├── /services
+│
+├── /about
+│
+├── /contact
+│
+├── /support
+│   └── /support/[slug]
+│
+├── /privacy
+│   └── /privacy/[slug]
+│
+├── /terms
+│   └── /terms/[slug]
+│
+├── /404
+│
+└── /api
+    └── /contact
+```
+
+Product-specific legal pages should be created when a product requires its own policy or terms.
+
+---
+
+# 5. Functional Requirements
+
+## 5.1 Homepage
+
+**Route:** `/`
+
+The homepage is the primary landing page and should communicate the identity of Two Digit System.
+
+### Section 1: Navigation
+
+Requirements:
+- Display brand logo and name.
+- Display main navigation links.
+- Include theme toggle.
+- Provide contact CTA.
+- Responsive mobile navigation.
+- Highlight the active navigation item.
+
+### Section 2: Hero
+
+Suggested heading:
+
+"Building useful digital products for everyday challenges."
+
+Suggested description:
+
+"Two Digit System develops thoughtful Android apps and powerful web applications that make everyday tasks simpler and more efficient."
+
+Requirements:
+- Brand introduction.
+- Primary CTA: Explore Our Apps.
+- Secondary CTA: Start a Project.
+- Attractive product-focused illustration or screenshots.
+- Responsive layout.
+
+### Section 3: Featured Products
+
+Display selected products.
+
+Each product card must include:
+- Product icon or image.
+- Product name.
+- Short description.
+- Platform badge.
+- Product availability status.
+- View Details link.
+
+Display a maximum of 3–4 featured products.
+
+Include a View All Products link.
+
+### Section 4: What We Build
+
+Display the studio's capabilities:
+
+1. Android Applications.
+2. Web Applications.
+3. Custom Software Development.
+4. Maintenance and Support.
+
+Each item should include an icon, title, description, and optional details link.
+
+### Section 5: Why Two Digit System?
+
+Explain the studio's development philosophy.
+
+Suggested highlights:
+- Purpose-driven development.
+- User-friendly interfaces.
+- Modern technologies.
+- Performance-focused solutions.
+- Continuous improvements.
+
+### Section 6: Development Process
+
+Show the development workflow:
+
+1. Discover.
+2. Design.
+3. Develop.
+4. Launch.
+5. Improve.
+
+### Section 7: About Preview
+
+Include a short introduction to Two Digit System.
+
+Provide a link to the complete About page.
+
+### Section 8: Contact CTA
+
+Suggested heading:
+
+"Have an idea? Let's build it."
+
+Include a button linking to the contact page.
+
+### Section 9: Footer
+
+Include:
+- Brand logo.
+- Brand description.
+- Product links.
+- Service links.
+- About and Contact links.
+- Privacy Policy.
+- Terms and Conditions.
+- Support.
+- Social media links.
+- Copyright information.
+
+---
+
+## 5.2 Products Listing
+
+**Route:** `/apps`
+
+Purpose: Display all software products developed by Two Digit System.
+
+### Requirements
+
+- Display products in a responsive grid.
+- Support Android and Web product categories.
+- Support platform filtering.
+- Support product status filtering.
+- Display product cards.
+- Include individual product detail links.
+- Support empty states.
+
+### Product Categories
+
+- All Products.
+- Android Applications.
+- Web Applications.
+
+### Product Status
+
+- Live.
+- Beta.
+- In Development.
+- Coming Soon.
+- Maintenance.
+- Archived.
+
+Only appropriate public-facing statuses should be displayed.
+
+### Product Card Information
+
+Each card should contain:
+
+- Product icon.
+- Product name.
+- Short description.
+- Platform.
+- Status.
+- Product details CTA.
+
+---
+
+## 5.3 Product Detail Page
+
+**Route:** `/apps/[slug]`
+
+Each product must have its own dedicated SEO-friendly landing page.
+
+### Required Sections
+
+**1. Product Hero**
+- Product icon.
+- Product name.
+- Tagline.
+- Description.
+- Platform information.
+- Product status.
+- Download or Visit Website CTA.
+
+**2. Product Overview**
+- What the application does.
+- Who should use it.
+- What problems it solves.
+
+**3. Features**
+- Main product features.
+- Feature descriptions.
+- Feature icons or illustrations.
+
+**4. Screenshots Gallery**
+- Product screenshots.
+- Responsive gallery.
+- Full-size image viewing.
+- Mobile-friendly navigation.
+
+**5. Platform Availability**
+- Android availability.
+- Web availability.
+- Google Play Store link.
+- Web application link.
+
+Only show links for platforms where the product is actually available.
+
+**6. Frequently Asked Questions**
+- Product-specific questions.
+- Answers.
+
+**7. Support**
+- Contact support.
+- View support documentation.
+
+**8. Legal**
+- Privacy Policy.
+- Terms and Conditions.
+
+### Product Detail Page CTA Rules
+
+- Live Android product: Show Google Play button.
+- Live web product: Show Open Web App button.
+- Beta product: Show Beta Access button where available.
+- In Development: Show Coming Soon status.
+- Coming Soon: Do not show broken or unavailable download links.
+
+---
+
+## 5.4 Android Applications Page
+
+**Route:** `/apps/android`
+
+Purpose: Showcase Android applications.
+
+Requirements:
+- Display Android products only.
+- Product cards.
+- App icons.
+- Short descriptions.
+- Google Play availability.
+- Individual app detail pages.
+
+Primary CTA: Explore Application.
+
+Secondary CTA: Download on Google Play, when available.
+
+---
+
+## 5.5 Web Applications Page
+
+**Route:** `/apps/web`
+
+Purpose: Showcase web-based software products.
+
+Requirements:
+- Display web applications only.
+- Product screenshots.
+- Product descriptions.
+- Application features.
+- Live application links.
+- Individual detail pages.
+
+Primary CTA: Explore Web Application.
+
+Secondary CTA: Open Application, when available.
+
+---
+
+## 5.6 Services Page
+
+**Route:** `/services`
+
+Purpose: Present available development services.
+
+### Service Categories
+
+**Android App Development**
+- Native Android application development.
+- Application UI implementation.
+- Firebase integration.
+- Authentication.
+- API integration.
+- Application maintenance.
+
+**Web Application Development**
+- Business web applications.
+- SaaS platforms.
+- Dashboard development.
+- Authentication systems.
+- Database integrations.
+- API development and integration.
+
+**Custom Software Development**
+- Business-specific solutions.
+- Workflow automation.
+- Custom management systems.
+- Internal tools.
+
+**Maintenance and Support**
+- Bug fixes.
+- Feature improvements.
+- Performance improvements.
+- Application updates.
+
+### Service Page Sections
+
+1. Hero.
+2. Services overview.
+3. Technologies.
+4. Development process.
+5. Frequently asked questions.
+6. Contact CTA.
+
+Services must only be advertised when the developer is willing and available to provide them.
+
+---
+
+## 5.7 About Page
+
+**Route:** `/about`
+
+Purpose: Introduce the studio and its development philosophy.
+
+### Content Requirements
+
+- Studio introduction.
+- Brand story.
+- Vision.
+- Mission.
+- Development philosophy.
+- Technologies used.
+- Developer introduction.
+- Social and professional links.
+
+The site should be transparent that Two Digit System is an independent, solo-developed studio.
+
+Avoid presenting it as a large team or company with employees.
+
+Suggested heading:
+
+"Small independent studio. Big focus on useful software."
+
+---
+
+## 5.8 Contact Page
+
+**Route:** `/contact`
+
+Purpose: Allow visitors to contact Two Digit System.
+
+### Contact Form Fields
+
+| Field | Type | Required |
+|---|---|---|
+| Full Name | Text | Yes |
+| Email | Email | Yes |
+| Project Type | Select | Yes |
+| Subject | Text | Yes |
+| Message | Textarea | Yes |
+| Budget | Select | No |
+
+Project Type options:
+
+- Android Application.
+- Web Application.
+- Custom Software.
+- Existing Product Support.
+- Collaboration.
+- Other.
+
+### Contact Form Functionality
+
+- Client-side validation.
+- Server-side validation.
+- Email delivery.
+- Loading state.
+- Success confirmation.
+- Error handling.
+- Spam protection.
+- Rate limiting.
+
+### Contact Delivery
+
+Send enquiries to the configured business email address.
+
+Recommended implementation: Next.js Route Handler + Resend.
+
+Do not expose email API credentials to the browser.
+
+---
+
+## 5.9 Support Pages
+
+**Routes:**
+- `/support`
+- `/support/[slug]`
+
+Purpose: Provide assistance for individual products.
+
+Requirements:
+- Product-specific support information.
+- FAQs.
+- Troubleshooting instructions.
+- Contact support link.
+- Related product information.
+
+---
+
+## 5.10 Legal Pages
+
+### Privacy Policy
+
+Explain:
+- Information collected.
+- How contact-form information is processed.
+- Cookies and analytics.
+- Data retention.
+- Third-party services.
+- User rights.
+- Contact information.
+
+### Terms and Conditions
+
+Explain:
+- Website usage.
+- Intellectual property.
+- Product availability.
+- External links.
+- Limitations of liability.
+- Changes to terms.
+
+### Product Privacy Policies
+
+Allow individual products to have separate privacy policy pages where required.
+
+Legal content must accurately reflect actual data collection and product behavior.
+
+---
+
+# 6. Design Requirements
+
+## 6.1 Design Philosophy
+
+The website should look like a premium independent software studio.
+
+Design characteristics:
+- Minimal.
+- Modern.
+- Clean typography.
+- Spacious layouts.
+- Product-focused.
+- Professional.
+- Responsive.
+
+## 6.2 Color System
+
+Suggested brand direction:
+
+| Element | Suggested Color |
+|---|---|
+| Primary | Indigo / Electric Blue |
+| Secondary | Violet |
+| Background | White / Off-white |
+| Foreground | Dark Navy |
+| Muted | Slate Gray |
+| Border | Light Gray |
+| Accent | Blue |
+
+Implement the palette with semantic CSS variables for easy theme customization.
+
+## 6.3 Typography
+
+Recommended:
+- Geist Sans or Inter.
+- Clear heading hierarchy.
+- Readable body text.
+- Consistent line heights.
+
+## 6.4 Components
+
+Use shadcn/ui for:
+- Button.
+- Card.
+- Badge.
+- Navigation Menu.
+- Sheet.
+- Dropdown Menu.
+- Select.
+- Input.
+- Textarea.
+- Separator.
+- Accordion.
+- Dialog.
+- Skeleton.
+- Form.
+
+Use Lucide icons.
+
+## 6.5 Themes
+
+Support:
+- Light theme.
+- Dark theme.
+- System preference.
+
+Remember the selected theme using an appropriate theme provider.
+
+## 6.6 Responsive Breakpoints
+
+The website must support:
+- Mobile: 320px and above.
+- Tablet: 768px and above.
+- Desktop: 1024px and above.
+- Large screens: 1440px and above.
+
+All content must remain usable without horizontal scrolling.
+
+---
+
+# 7. Technical Requirements
+
+## 7.1 Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js App Router |
+| Language | TypeScript |
+| UI Library | React |
+| Styling | Tailwind CSS |
+| Components | shadcn/ui |
+| Icons | Lucide React |
+| Animation | Motion |
+| Form Handling | React Hook Form |
+| Validation | Zod |
+| Email | Resend |
+| Theme | next-themes |
+| Deployment | Vercel |
+| Package Manager | pnpm |
+
+Use stable versions compatible with one another at implementation time.
+
+## 7.2 Rendering Strategy
+
+Use:
+- Server Components by default.
+- Client Components only when interaction requires them.
+- Static generation for product pages where possible.
+- Dynamic rendering only when required.
+
+The marketing website should prioritize fast loading and search engine accessibility.
+
+## 7.3 Content Management
+
+For the MVP, product information will be maintained through typed TypeScript data files.
+
+No database or CMS is required initially.
+
+Future options:
+- Sanity.
+- Payload CMS.
+- A custom administration dashboard.
+
+## 7.4 Data Model
+
+Define a reusable Product type.
+
+Example:
+
+```typescript
+export type ProductPlatform =
+  | "android"
+  | "web"
+  | "both";
+
+export type ProductStatus =
+  | "live"
+  | "beta"
+  | "in-development"
+  | "coming-soon"
+  | "maintenance"
+  | "archived";
+
+export interface Product {
+  id: string;
+  name: string;
+  slug: string;
+  tagline: string;
+  description: string;
+
+  icon: string;
+  coverImage?: string;
+
+  platform: ProductPlatform;
+  status: ProductStatus;
+
+  category: string;
+  featured: boolean;
+
+  features: {
+    title: string;
+    description: string;
+    icon?: string;
+  }[];
+
+  screenshots: {
+    src: string;
+    alt: string;
+  }[];
+
+  links: {
+    website?: string;
+    playStore?: string;
+  };
+
+  supportUrl?: string;
+  privacyUrl?: string;
+  termsUrl?: string;
+
+  seo: {
+    title: string;
+    description: string;
+  };
+}
+```
+
+Additional product fields can be introduced when real content requirements emerge.
+
+## 7.5 API Requirements
+
+Initial API endpoint:
+
+`POST /api/contact`
+
+Responsibilities:
+- Validate request.
+- Sanitize and validate input.
+- Apply spam protection.
+- Send enquiry email.
+- Return structured response.
+- Handle delivery failures safely.
+
+No public product API is required in the MVP.
+
+---
+
+# 8. SEO Requirements
+
+SEO is important because every product should be discoverable independently.
+
+### Technical SEO
+
+- Unique page titles.
+- Meta descriptions.
+- Canonical URLs.
+- Open Graph metadata.
+- Twitter/X card metadata.
+- XML sitemap.
+- robots.txt.
+- Semantic HTML.
+- Structured data.
+- Image alt text.
+- Clean URL structure.
+
+### Structured Data
+
+Implement appropriate schema types:
+
+- Organization.
+- WebSite.
+- SoftwareApplication.
+- BreadcrumbList.
+
+Only include structured information that accurately represents the content.
+
+### Product SEO
+
+Each product page must have:
+- Unique title.
+- Unique description.
+- Dedicated Open Graph image where available.
+- Product-specific content.
+- Correct canonical URL.
+- Relevant structured data.
+
+---
+
+# 9. Performance Requirements
+
+Target metrics:
+
+- Lighthouse Performance: 90+.
+- Lighthouse Accessibility: 95+.
+- Lighthouse Best Practices: 95+.
+- Lighthouse SEO: 95+.
+
+These are performance targets, not guaranteed results.
+
+Additional requirements:
+- Optimized images.
+- Responsive image delivery.
+- Lazy loading below-the-fold images.
+- Avoid unnecessary JavaScript.
+- Minimize layout shifts.
+- Use appropriate caching.
+- Optimize fonts.
+- Avoid unnecessarily large animation libraries or bundles.
+
+---
+
+# 10. Accessibility Requirements
+
+Target WCAG 2.2 AA.
+
+Requirements:
+- Keyboard navigation.
+- Visible focus indicators.
+- Semantic HTML.
+- Accessible form labels.
+- Appropriate color contrast.
+- Accessible dropdown menus.
+- Screen-reader-friendly controls.
+- Descriptive image alt text.
+- Reduced-motion support.
+
+---
+
+# 11. Security and Privacy Requirements
+
+- HTTPS throughout the website.
+- Environment variables for secrets.
+- Server-side form validation.
+- Contact-form rate limiting.
+- Spam prevention.
+- Secure email integration.
+- No sensitive data in client-side code.
+- Avoid unnecessary personal data collection.
+- Do not expose internal error details.
+
+Analytics and cookie behavior must follow applicable privacy requirements.
+
+---
+
+# 12. Analytics and Tracking
+
+Integrate analytics to understand website performance.
+
+Recommended tools:
+- Google Analytics 4.
+- Vercel Analytics.
+
+Track events:
+
+| Event | Description |
+|---|---|
+| page_view | Page visits |
+| product_view | Product detail viewed |
+| product_click | Product CTA clicked |
+| play_store_click | Google Play clicked |
+| web_app_click | Live application opened |
+| contact_start | Contact form interaction |
+| contact_submit | Successful enquiry submission |
+
+Track conversions without collecting unnecessary personal information.
+
+---
+
+# 13. Non-Functional Requirements
+
+### Reliability
+The website must remain accessible and handle failures gracefully.
+
+### Maintainability
+Code should be modular, typed, and easy for one developer to maintain.
+
+### Scalability
+Adding a new product should require only adding product data and associated assets.
+
+### Reusability
+Reusable components must be used for product cards, navigation, footer, buttons, and page layouts.
+
+### Compatibility
+Support modern versions of Chrome, Firefox, Safari, and Edge.
+
+### Localization
+The MVP will use English as the primary language. The architecture should not prevent adding other languages later.
+
+---
+
+# 14. User Journeys
+
+## Journey A: Discover an Android App
+
+1. User visits homepage.
+2. User sees featured applications.
+3. User navigates to Apps.
+4. User selects Android category.
+5. User opens a product detail page.
+6. User explores product features and screenshots.
+7. User clicks Google Play.
+8. User reaches the appropriate Play Store listing.
+
+## Journey B: Discover a Web Application
+
+1. User visits homepage.
+2. User navigates to Web Apps.
+3. User explores available software.
+4. User opens a product detail page.
+5. User checks features.
+6. User clicks Open Application.
+7. User reaches the live application.
+
+## Journey C: Request Custom Development
+
+1. User visits homepage.
+2. User explores Services.
+3. User reads development capabilities.
+4. User clicks Start a Project.
+5. User fills out the contact form.
+6. Server validates the submission.
+7. Enquiry email is sent.
+8. User sees submission confirmation.
+
+---
+
+# 15. MVP Scope and Prioritization
+
+Features are prioritized using P0, P1, and P2.
+
+### P0 — Required for Launch
+
+- Professional responsive homepage.
+- Navigation and footer.
+- Products listing page.
+- Android and Web categories.
+- Dynamic product detail pages.
+- Product screenshots.
+- Product availability badges.
+- About page.
+- Services page.
+- Contact page and functional email delivery.
+- Privacy Policy.
+- Terms and Conditions.
+- Basic support pages.
+- Light and dark themes.
+- SEO metadata.
+- Sitemap and robots.txt.
+- Analytics.
+- Deployment.
+
+### P1 — Important Improvements
+
+- Advanced product filtering.
+- Product search.
+- Product category pages.
+- Rich product screenshot gallery.
+- Better animations.
+- Detailed FAQs.
+- Dedicated Open Graph images.
+- Enhanced analytics events.
+- Social links.
+
+### P2 — Future Enhancements
+
+- Headless CMS.
+- Admin dashboard.
+- Multi-language support.
+- Blog and development articles.
+- Newsletter subscription.
+- Testimonials.
+- Product changelogs.
+- Case studies.
+- Customer inquiry management.
+
+---
+
+# 16. Acceptance Criteria
+
+The MVP will be considered complete when:
+
+1. The website is publicly accessible using its production domain.
+2. The homepage displays the brand and featured products.
+3. All published products appear correctly in the product listing.
+4. Android and Web product filters work correctly.
+5. Every published product has an accessible detail page.
+6. Product links point to the correct destinations.
+7. Unavailable product links are not displayed.
+8. Contact form submissions are validated.
+9. Successful enquiries are delivered to the configured email.
+10. Users receive confirmation after successful submission.
+11. About and Services pages are complete.
+12. Support and legal pages are accessible.
+13. Light and dark themes function correctly.
+14. All pages work on mobile, tablet, and desktop.
+15. Metadata and sitemap are correctly generated.
+16. No broken links or major console errors remain.
+17. Accessibility and performance checks are completed.
+18. Analytics events work as intended.
+
+---
+
+# 17. Development Roadmap
+
+The project should be developed in manageable phases.
+
+### Phase 1 — Foundation
+
+- Initialize Next.js project.
+- Configure TypeScript.
+- Configure Tailwind CSS.
+- Install shadcn/ui.
+- Configure fonts and icons.
+- Establish design tokens.
+- Implement theme switching.
+- Create shared layout.
+
+### Phase 2 — Homepage and Branding
+
+- Build navigation.
+- Build hero section.
+- Build featured products.
+- Build capabilities section.
+- Build development process.
+- Build about preview.
+- Build CTA.
+- Build footer.
+
+### Phase 3 — Product System
+
+- Define Product TypeScript interfaces.
+- Create product data files.
+- Build product cards.
+- Build Apps listing.
+- Implement platform filtering.
+- Build dynamic product detail pages.
+- Add screenshot galleries.
+- Implement availability-based CTAs.
+
+### Phase 4 — Supporting Pages
+
+- Build Services.
+- Build About.
+- Build Contact.
+- Build Support.
+- Build Privacy Policy.
+- Build Terms and Conditions.
+
+### Phase 5 — SEO and Optimization
+
+- Configure metadata.
+- Generate sitemap.
+- Configure robots.txt.
+- Implement structured data.
+- Optimize images.
+- Test performance.
+- Test accessibility.
+
+### Phase 6 — Launch
+
+- Configure production environment.
+- Connect domain.
+- Deploy to Vercel.
+- Configure analytics.
+- Test contact email.
+- Test all links.
+- Perform final responsive testing.
+- Publish the website.
+
+---
+
+# 18. Suggested Project Configuration
+
+Suggested initial project setup:
+
+```bash
+pnpm create next-app@latest two-digit-system
+```
+
+Select:
+- TypeScript: Yes
+- ESLint: Yes
+- Tailwind CSS: Yes
+- App Router: Yes
+- src directory: Yes
+- Import alias: @/*
+
+Install required libraries:
+
+```bash
+pnpm add lucide-react
+pnpm add next-themes
+pnpm add react-hook-form zod
+pnpm add @hookform/resolvers
+pnpm add motion
+pnpm add resend
+```
+
+Initialize shadcn/ui and add the required components using its CLI.
+
+---
+
+# 19. Key Product Decisions
+
+The following decisions establish the initial product direction:
+
+| Decision | Selected Approach |
+|---|---|
+| Website type | Independent software studio |
+| Branding | Two Digit System |
+| Primary identity | Product-focused software developer |
+| Primary platforms | Android and Web |
+| Main objective | Product discovery and business enquiries |
+| Framework | Next.js |
+| Language | TypeScript |
+| UI | shadcn/ui |
+| Styling | Tailwind CSS |
+| Rendering | Server-first |
+| Product storage | Static TypeScript data |
+| Database | Not required initially |
+| CMS | Future enhancement |
+| Authentication | Not required |
+| Admin Dashboard | Not required |
+| Hosting | Vercel |
+
+---
+
+# 20. Final Product Definition
+
+Two Digit System will be a modern, product-focused independent software studio website.
+
+It will provide a single destination for discovering software products, exploring their features, accessing applications, finding support, and contacting the developer for custom software projects.
+
+The architecture will prioritize simplicity, maintainability, performance, SEO, and future extensibility.
+
+The first release should focus on building an excellent public-facing website rather than introducing unnecessary backend complexity.
+
+**Core principle: Build a polished product portfolio first. Expand into a larger software platform only when there is a real business need.**
+
+---
+
+**End of Product Requirements Document**

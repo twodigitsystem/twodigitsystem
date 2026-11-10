@@ -1,0 +1,12 @@
+ {
+  "name"   : "string",
+  "tagline": "string",
+  "description": "string",
+  "platform": "string",
+  "status": "string",
+  "category": "string",
+  "supportUrl": "string",
+  "privacyUrl": "string",
+  "termsUrl": "string"
+
+}
